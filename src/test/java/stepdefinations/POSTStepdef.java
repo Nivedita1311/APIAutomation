@@ -3,13 +3,10 @@ package stepdefinations;
 import com.github.javafaker.Faker;
 import crudOperations.TodoItemsCRUD;
 import io.cucumber.java.Before;
-import io.cucumber.java.BeforeStep;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.response.Response;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import payload.ToDoItemsPOJO;
 
 

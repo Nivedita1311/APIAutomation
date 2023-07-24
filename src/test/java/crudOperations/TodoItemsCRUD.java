@@ -10,9 +10,11 @@ import payload.ToDoItemsPOJO;
 
 public class TodoItemsCRUD {
 
+    static Response response;
+
     public static Response createItem(ToDoItemsPOJO payload)
     {
-        Response response =
+        response =
 
                 RestAssured.given()
                 .contentType(ContentType.JSON)
@@ -26,7 +28,7 @@ public class TodoItemsCRUD {
 
     public static Response updateItem(String identity, ToDoItemsPOJO payload)
     {
-        Response response =
+        response =
 
                 RestAssured.given()
                         .contentType(ContentType.JSON)
@@ -41,7 +43,7 @@ public class TodoItemsCRUD {
 
     public static Response retrieveItem(ToDoItemsPOJO identity)
     {
-        Response response =
+        response =
 
                 RestAssured.given()
                         .pathParam("id", identity)
