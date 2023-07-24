@@ -1,0 +1,113 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>apiAuto</groupId>
+  <artifactId>ClearPointAPIAuto</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>ClearPointAPIAuto</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.8</java.version>
+    <junit.version>4.13.1</junit.version>
+    <cucumber.version>6.9.0</cucumber.version>
+    <maven.compiler.version>3.8.1</maven.compiler.version>
+    <maven.surefire.version>2.22.2</maven.surefire.version>
+    <maven.compiler.source>20</maven.compiler.source>
+    <maven.compiler.target>20</maven.compiler.target>
+
+  </properties>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>${cucumber.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-testng</artifactId>
+      <version>${cucumber.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+
+    <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+    <!-- to use Rest Assured framework -->
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>rest-assured</artifactId>
+      <version>5.3.0</version>
+      <scope>test</scope>
+    </dependency>
+
+
+    <!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
+    <!-- to read the json -->
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>json-path</artifactId>
+      <version>5.3.0</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+    <dependency>
+      <groupId>com.github.javafaker</groupId>
+      <artifactId>javafaker</artifactId>
+      <version>1.0.2</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.json/json -->
+    <!-- to validate the json -->
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20230227</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+    <!-- to use TestNG annotations -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.7.1</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
+    <!-- validating the schema body -->
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>json-schema-validator</artifactId>
+      <version>5.3.0</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+    <!-- report external -->
+    <dependency>
+      <groupId>com.aventstack</groupId>
+      <artifactId>extentreports</artifactId>
+      <version>5.0.9</version>
+    </dependency>
+
+    <dependency>
+      <groupId>apiAuto</groupId>
+      <artifactId>ClearPointAPIAuto</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+
+
+</project>
