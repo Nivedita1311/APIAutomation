@@ -1,8 +1,5 @@
 package payload;
 
-import lombok.Builder;
-import lombok.Getter;
-
 public class ToDoItemsPOJO {
 
     //member variables - json objects
