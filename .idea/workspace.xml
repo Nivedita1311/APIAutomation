@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c8ef770-f43e-4942-8499-c3649d76c276" name="Changes" comment="Commit first code">
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/crudOperations/TodoItemsCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/crudOperations/TodoItemsCRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/payload/ToDoItemsPOJO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/payload/ToDoItemsPOJO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinations/POSTStepdef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinations/POSTStepdef.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +26,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2T06NPJzPrVWCihWtDgoaeHHH5D" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -167,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690210427303</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit first code">
+      <created>1690210641290</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690210641290</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

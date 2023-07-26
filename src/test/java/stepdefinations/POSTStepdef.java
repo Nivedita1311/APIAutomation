@@ -1,28 +1,30 @@
 package stepdefinations;
 
 import com.github.javafaker.Faker;
+import com.github.javafaker.service.RandomService;
 import crudOperations.TodoItemsCRUD;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.response.Response;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import payload.ToDoItemsPOJO;
+
+import java.util.Locale;
 
 
 public class POSTStepdef {
 
-    ToDoItemsPOJO toDoItems;
     Response response;
-    Faker faker;
+    ToDoItemsPOJO toDoItems;
 
     @Before
     public void setData(){
 
-        faker = new Faker();
-        toDoItems = new ToDoItemsPOJO();
-
-        toDoItems.setDescription(String.valueOf(faker.name().hashCode()));
+        Faker faker = new Faker(new Locale("en-GB"), new RandomService());
+        toDoItems= new ToDoItemsPOJO();
+        toDoItems.setDescription(String.valueOf(faker.regexify("[a-z1-9]{10}").hashCode()));
 
     }
 
