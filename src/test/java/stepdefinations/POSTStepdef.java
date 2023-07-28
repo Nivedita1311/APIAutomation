@@ -2,14 +2,13 @@ package stepdefinations;
 
 import com.github.javafaker.Faker;
 import com.github.javafaker.service.RandomService;
-import com.google.gson.JsonObject;
+
 import crudOperations.TodoItemsCRUD;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.restassured.path.json.JsonPath;
+
 import io.restassured.response.Response;
-import io.restassured.response.ResponseBody;
 import org.testng.Assert;
 import payload.ToDoItemsPOJO;
 
