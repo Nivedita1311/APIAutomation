@@ -9,8 +9,8 @@ public class ApiUrls {
 
 
     //defining todoItems urls
-    public static String get_Url = base_url+"/todoItems/{iD}";
+    public static String get_Url = base_url+"/todoItems/{id}";
     public static String post_Url = base_url+"/todoItems";
-    public static String put_Url= base_url+"/todoItems/{iD}";
+    public static String put_Url= base_url+"/todoItems/{id}";
 
 }

@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c8ef770-f43e-4942-8499-c3649d76c276" name="Changes" comment="Commit first code">
+    <list default="true" id="9c8ef770-f43e-4942-8499-c3649d76c276" name="Changes" comment="Commit with random data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/Urls/ApiUrls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/Urls/ApiUrls.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/payload/ToDoItemsPOJO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/payload/ToDoItemsPOJO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/crudOperations/TodoItemsCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/crudOperations/TodoItemsCRUD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinations/POSTStepdef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinations/POSTStepdef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/features/PostItem.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/features/PostItem.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +59,7 @@
       <recent name="TestRunner" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: PostItem">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Verify POST Item success">
     <configuration name="Feature: PostItem" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/features/PostItem.feature" />
@@ -64,6 +68,46 @@
       <module name="ClearPointAPIAuto" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: PostItem" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Verify GET Item success" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/features/PostItem.feature" />
+      <option name="GLUE" value="stepdefinations" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ClearPointAPIAuto" />
+      <option name="NAME_FILTER" value="^Verify GET Item success$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify GET Item success$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify GET Item success" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Verify POST Item success" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/features/PostItem.feature" />
+      <option name="GLUE" value="stepdefinations" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ClearPointAPIAuto" />
+      <option name="NAME_FILTER" value="^Verify POST Item success$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify POST Item success$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify POST Item success" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -95,32 +139,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tests.POSTToDoItemsTests,testPostTodoItems and 1 more (2)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ClearPointAPIAuto" />
-      <option name="TEST_OBJECT" value="PATTERN" />
-      <properties />
-      <listeners />
-      <patterns>
-        <pattern testClass="tests.POSTToDoItemsTests,testPostTodoItems" />
-        <pattern testClass="tests.POSTToDoItemsTests,testGetTodoItems" />
-      </patterns>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tests.POSTToDoItemsTests,testPostTodoItems and 1 more (3)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ClearPointAPIAuto" />
-      <option name="TEST_OBJECT" value="PATTERN" />
-      <properties />
-      <listeners />
-      <patterns>
-        <pattern testClass="tests.POSTToDoItemsTests,testPostTodoItems" />
-        <pattern testClass="tests.POSTToDoItemsTests,testGetTodoItems" />
-      </patterns>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="tests.POSTToDoItemsTests,testPostTodoItems and 1 more (4)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ClearPointAPIAuto" />
       <option name="TEST_OBJECT" value="PATTERN" />
@@ -136,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Verify POST Item success" />
+        <item itemvalue="Cucumber Java.Scenario: Verify GET Item success" />
         <item itemvalue="Cucumber Java.Feature: PostItem" />
         <item itemvalue="Cucumber Java.Scenario: Verify Post Item success" />
         <item itemvalue="TestNG.tests.POSTToDoItemsTests,testPostTodoItems and 1 more (4)" />
-        <item itemvalue="TestNG.tests.POSTToDoItemsTests,testPostTodoItems and 1 more (3)" />
-        <item itemvalue="TestNG.tests.POSTToDoItemsTests,testPostTodoItems and 1 more (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -174,11 +192,26 @@
       <option name="project" value="LOCAL" />
       <updated>1690210641290</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Commit with random data">
+      <created>1690332159814</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690332159814</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Commit with random data">
+      <created>1690332202329</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690332202329</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit first code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit first code" />
+    <MESSAGE value="Commit with random data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit with random data" />
   </component>
 </project>

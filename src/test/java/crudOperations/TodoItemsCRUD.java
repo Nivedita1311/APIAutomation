@@ -41,12 +41,13 @@ public class TodoItemsCRUD {
 
     }
 
-    public static Response retrieveItem(ToDoItemsPOJO identity)
+    public static Response retrieveItem(String id)
     {
         response =
 
                 RestAssured.given()
-                        .pathParam("id", identity)
+                        .contentType(ContentType.JSON)
+                        .pathParam("id", id)
                         .when()
                         .get(ApiUrls.get_Url);
 

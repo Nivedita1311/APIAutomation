@@ -4,18 +4,18 @@ public class ToDoItemsPOJO {
 
     //member variables - json objects
 
-    String iD;
-    String description;
-    boolean isCompleted;
+    private String id;
+    private String description;
+    private boolean isCompleted;
 
     //getters and setters
 
-    public String  getiD() {
-        return iD;
+    public String  getId() {
+        return id;
     }
 
-    public void setiD(String iD) {
-        this.iD = iD;
+    public void setId(String iD) {
+        this.id = id;
     }
 
     public String getDescription() {

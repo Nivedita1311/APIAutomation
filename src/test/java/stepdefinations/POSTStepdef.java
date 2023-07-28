@@ -2,11 +2,14 @@ package stepdefinations;
 
 import com.github.javafaker.Faker;
 import com.github.javafaker.service.RandomService;
+import com.google.gson.JsonObject;
 import crudOperations.TodoItemsCRUD;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import io.restassured.response.ResponseBody;
 import org.testng.Assert;
 import payload.ToDoItemsPOJO;
 
@@ -17,12 +20,13 @@ public class POSTStepdef {
 
     Response response;
     ToDoItemsPOJO toDoItems;
+    Faker faker;
 
     @Before
-    public void setData(){
+    public void setData() {
 
-        Faker faker = new Faker(new Locale("en-GB"), new RandomService());
-        toDoItems= new ToDoItemsPOJO();
+        faker = new Faker(new Locale("en-GB"), new RandomService());
+        toDoItems = new ToDoItemsPOJO();
         toDoItems.setDescription(String.valueOf(faker.regexify("[a-z1-9]{10}").hashCode()));
 
     }
@@ -35,10 +39,26 @@ public class POSTStepdef {
 
     }
 
-
     @Then("Verify response status code is {int}")
     public void verifyResponseStatusCodeIs(int statusCode) {
 
-        Assert.assertEquals(response.getStatusCode(),statusCode);
+        Assert.assertEquals(response.getStatusCode(), statusCode);
     }
+
+    @Given("User is able to find an Item")
+    public void userIsAbleToFindAnItem() {
+        response = TodoItemsCRUD.retrieveItem(this.toDoItems.getId());
+        response.then().log().all();
+        response.prettyPrint();
+    }
+
+    @Given("User is able to update an Item")
+    public void userIsAbleToUpdateAnItem() {
+        toDoItems.setDescription("Nivedita1");
+        response = TodoItemsCRUD.updateItem(this.toDoItems.getDescription(), toDoItems);
+        response.then().log().all();
+        response.prettyPrint();
+    }
+
 }
+
